@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuecheng.model.mapper.EmpH215Mapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xuecheng.model.admin.entity.EmpH215">
+        <id column="empid_H2_15" property="empidH215" />
+        <result column="emp_name" property="empName" />
+        <result column="emp_office" property="empOffice" />
+        <result column="emp_username" property="empUsername" />
+        <result column="emp_pwd" property="empPwd" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        empid_H2_15, emp_name, emp_office, emp_username, emp_pwd
+    </sql>
+
+</mapper>
